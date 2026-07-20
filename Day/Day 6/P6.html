@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+        body{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            height: 2000px;
+            margin: 20px;
+        }
+        .box{
+            padding: 15px;
+            color: rgb(151, 125, 151);
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        .sticky-header{
+            position:sticky;
+            background-color: brown;
+            top:0;
+            z-index:999;
+        }
+        .static-box{
+            position: static;
+            background-color: blueviolet;
+        }
+        .relative-box{
+            position: relative;
+            background-color: rgb(4, 39, 40);
+            top:20px;
+            left:20px;
+        }
+        .parent-container{
+            position: relative;
+            background-color: brown;
+            height:120px;
+            border:2px dashed blueviolet;
+        }
+        .absolute-box{
+            position: absolute;
+            background-color: darkgoldenrod;
+            top:10px;
+            right:10px;
+            margin: 0;
+        }
+        .fixed-box{
+            position: fixed;
+            background-color: darkgreen;
+            bottom: 20px;
+            right: 20px;
+            z-index:1000;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Position Property: Dictates how an element is placed on a webpage. Its controls whether
+        an element stays in the normal page flow, or moves relative to its neighbours or locks
+        it in a place when user scrolls
+        1.Static: Normal page flow. (Default)
+        2.Relative: Moves away from its normal spot without disturbuing the neighbours.
+        3.Absolute: Files out of normal flow,positioning itself inside its closet relative parent
+        4.Fixed: Looks to the viewport. Stays in the exact same spot on the screen while scrolling.
+        5.Sticky: Scrolls naturally with the page, then looks in palce like FIXED when hits the edge.
+    </p>
+    <p>
+        Both display property and position property,controls layput,difference is that
+        display creates the box and position move the box.
+    </p>
+
+    <div class="box sticky-header">
+        I am sticky header, I'll scroll along with your scroll
+    </div>
+
+    <div class="box static-box">
+        Static diaplay property: Normal page flow.
+    </div>
+
+    <div class="box relative-box">
+        Relative: Moves away from its normal spot without disturbuing the neighbours.
+    </div>
+
+    <div class="parent-container">
+        <div class="box absolute-box">
+        Absolute: Files out of normal flow,positioning itself inside its closet relative parent
+        </div>
+    </div>
+
+    <div class="box fixed-box">
+        Fixed: Looks to the viewport. Stays in the exact same spot on the screen while scrolling.
+    </div>
+</body>
+</html>
