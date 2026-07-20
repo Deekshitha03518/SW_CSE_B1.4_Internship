@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        .demo-box {
+            padding: 10px;
+            margin: 10px;
+            /* border: 1px solid black; */
+        }
+        .block-style {
+            display: block;
+            background-color: lightblue;
+            width: 250px
+        }
+        .inline-style {
+            display: inline;
+            background-color: lightgreen;
+            width: 500px;
+            height: 500px;
+        }
+        .inline-block-style {
+            display: inline-block;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Display Property: Tells how an element behaves on a web page. It controlshow much
+        space an element takes up and where it sits in realtion to surrounding elements.
+        4 types:
+        Block: Takes full width 
+        Inline: Takes only as much width as necessary
+        Inline-Block: Behaves like an inline element but can have a width and height
+        None: Removes the element from the document flow
+    </p>
+    <div class="demo-box block-style">
+        Block 1
+    </div>
+
+    <span class="demo-box inline-style">
+        Inline 1
+    </span>
+
+    <div class="demo-box inline-block-style">
+        Inline-Block 1
+    </div>
+</body>
+</html>
