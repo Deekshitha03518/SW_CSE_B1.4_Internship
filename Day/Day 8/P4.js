@@ -20,7 +20,7 @@ console.log(score)
 if(true){
     let secret ="Password@123";    //let in JS is block-scoped
 }
-console.log(secret)    //ReferenceError: secret is not defined
+//console.log(secret)    //ReferenceError: secret is not defined
 
 //const: variable which cannot be reassigned after its declaration
 if(true){
@@ -29,4 +29,22 @@ if(true){
 
 }
 //const in JS is block-scoped
-console.log(pi)    //Reference error:pi is not defined
+//console.log(pi)    //Reference error:pi is not defined
+
+
+//var: function scoped  |Not recommended
+//let & const: block-scoped
+
+//var: function scoped 
+function test(){
+    if(true){
+        var a = 10;
+        let b = 20;
+        const c = 30;
+    }
+    // console.log(a);   //Worked
+    // console.log(b);   //Not Worked
+    // console.log(c);   //Not worked
+}
+console.log(a);
+test()
