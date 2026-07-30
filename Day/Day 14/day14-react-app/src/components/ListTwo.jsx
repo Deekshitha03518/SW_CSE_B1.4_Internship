@@ -1,8 +1,8 @@
 function UserList(params) {
     const users = [
-        {id: 1, name:"Usha", role:Farmer},
-        {id: 2, name:"Asha", role:Bsc},
-        {id: 3, name:"Isha", role:Developer},
+        {id: 1, name:"Usha", role:"Farmer"},
+        {id: 2, name:"Asha", role:"Bsc"},
+        {id: 3, name:"Isha", role:"Developer"},
     ]
 
     return(
