@@ -11,6 +11,7 @@ import ToggleText from "./components/StateTwo";
 import NameInput from "./components/StateThree";
 import ClickDemo from "./components/Event Handling";
 import FormDemo from "./components/Event Handling Two";
+import ActionButtons from "./components/Event Handling Three";
 const name = "Amay";
 const isLoggedIn = false;
 
@@ -53,6 +54,8 @@ function App() {
       <ClickDemo/>
 
       <FormDemo/>
+
+      <ActionButtons/>
     </>
 
   )
