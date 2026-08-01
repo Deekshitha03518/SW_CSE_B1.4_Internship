@@ -13,6 +13,9 @@ import ClickDemo from "./components/Event Handling";
 import FormDemo from "./components/Event Handling Two";
 import ActionButtons from "./components/Event Handling Three";
 import ProfileList from "./components/Props";
+import InfoBoxDemo from "./components/PropsTwo";
+
+import './App.css'
 
 const name = "Amay";
 const isLoggedIn = false;
@@ -60,6 +63,8 @@ function App() {
       <ActionButtons/>
 
        <ProfileList />
+
+      <InfoBoxDemo />
 
     </>
 
